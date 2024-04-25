@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>No Name (add projectName to cucumber-reporting.properties)</td>
+      <td>24 Apr 2024, 20:40</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">tech_state_cucumber.hooks.MyHooks.after(io.cucumber.java.Scenario)</td>
+              <td>4</td>
+              <td class="duration" data-value="262622000">0.262</td>
+              <td class="duration" data-value="262622000">0.657</td>
+              <td class="duration" data-value="1050488000">1.050</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.hooks.MyHooks.before(io.cucumber.java.Scenario)</td>
+              <td>4</td>
+              <td class="duration" data-value="2323986750">2.323</td>
+              <td class="duration" data-value="2323986750">6.953</td>
+              <td class="duration" data-value="9295947000">9.295</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.CartStepDefinitions.iShouldSeeInTheCart(int,tech_state_cucumber.domainobjects.Product)</td>
+              <td>2</td>
+              <td class="duration" data-value="45306000">0.045</td>
+              <td class="duration" data-value="45306000">0.046</td>
+              <td class="duration" data-value="90612000">0.090</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.CustomerAPIStepDefinitions.i_create_post_request_to_create_customer()</td>
+              <td>1</td>
+              <td class="duration" data-value="688157000">0.688</td>
+              <td class="duration" data-value="688157000">0.688</td>
+              <td class="duration" data-value="688157000">0.688</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.CustomerAPIStepDefinitions.i_get_status_code_from_database(java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="34828000">0.034</td>
+              <td class="duration" data-value="34828000">0.034</td>
+              <td class="duration" data-value="34828000">0.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.CustomerAPIStepDefinitions.i_have_the_data_to_create_customer_with(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="726000">0.000</td>
+              <td class="duration" data-value="726000">0.000</td>
+              <td class="duration" data-value="726000">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.CustomerAPIStepDefinitions.i_use_customer_header()</td>
+              <td>1</td>
+              <td class="duration" data-value="312949000">0.312</td>
+              <td class="duration" data-value="312949000">0.312</td>
+              <td class="duration" data-value="312949000">0.312</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.CustomerAPIStepDefinitions.response_body_should_contain(io.cucumber.datatable.DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="22926000">0.022</td>
+              <td class="duration" data-value="22926000">0.022</td>
+              <td class="duration" data-value="22926000">0.022</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.ProductStepDefinitions.iAmBrowsing(tech_state_cucumber.domainobjects.Product)</td>
+              <td>1</td>
+              <td class="duration" data-value="1607420000">1.607</td>
+              <td class="duration" data-value="1607420000">1.607</td>
+              <td class="duration" data-value="1607420000">1.607</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.ProductStepDefinitions.iSelectQuantity(int)</td>
+              <td>1</td>
+              <td class="duration" data-value="166224000">0.166</td>
+              <td class="duration" data-value="166224000">0.166</td>
+              <td class="duration" data-value="166224000">0.166</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.ProductStepDefinitions.iShouldSeeAnError()</td>
+              <td>1</td>
+              <td class="duration" data-value="20609000">0.020</td>
+              <td class="duration" data-value="20609000">0.020</td>
+              <td class="duration" data-value="20609000">0.020</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.StoreStepDefinitions.iAddAToTheCart(tech_state_cucumber.domainobjects.Product)</td>
+              <td>2</td>
+              <td class="duration" data-value="3044562000">3.044</td>
+              <td class="duration" data-value="3044562000">3.492</td>
+              <td class="duration" data-value="6089124000">6.089</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">tech_state_cucumber.stepdefinitions.StoreStepDefinitions.iMOnTheStorePage()</td>
+              <td>2</td>
+              <td class="duration" data-value="3782714000">3.782</td>
+              <td class="duration" data-value="3782714000">4.616</td>
+              <td class="duration" data-value="7565428000">7.565</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>13</td>
+            <td>22</td>
+            <td class="duration">1.224</td>
+            <td class="duration">9.295</td>
+            <td class="duration">26.945</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
