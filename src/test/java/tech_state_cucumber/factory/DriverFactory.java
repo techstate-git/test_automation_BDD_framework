@@ -37,10 +37,11 @@ public class DriverFactory {
 		switch (browser) {
 
 		case BROWSER_CHROME: {
-			System.setProperty("webdriver.chrome.driver", "src/test/java/tech_state_cucumber/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 
 			// Initialize ChromeOptions
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
 
 			// Add any desired options to the ChromeOptions
 

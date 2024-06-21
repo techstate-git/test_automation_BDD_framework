@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>24 Apr 2024, 20:40</td>
+      <td>21 Jun 2024, 02:15</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@regression</td>
-          <td      class="passed"    >8</td>
-          <td      class="failed"    >1</td>
           <td >0</td>
+          <td >0</td>
+          <td     class="skipped"   >9</td>
           <td >0</td>
           <td >0</td>
           <td class="total">9</td>
 
-          <td  class="passed"    >2</td>
-          <td  class="failed"    >1</td>
+          <td >0</td>
+          <td  class="failed"    >3</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="15539417000">15.539</td>
+          <td class="duration" data-value="414000">0.000</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">8.155</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Add one quantity from Store</span>
 
@@ -199,13 +199,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -215,17 +215,41 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-2" class="inner-level collapse collapsable-details ">
+    <div id="before-2" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">Before</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.777</span>
+  <span class="lead-duration duration">0.002</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>Error message</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.NoSuchDriverException: chromedriver at location /usr/bin/chromedriver, does not exist
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.1', java.version: '11.0.22'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:76)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:73)
+	at tech_state_cucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:49)
+	at tech_state_cucumber.hooks.MyHooks.before(MyHooks.java:45)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -238,9 +262,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,15 +274,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">I'm on the Store Page</span>
 
-  <span class="lead-duration duration">4.616</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -281,11 +305,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">I add a <span class="argument">&quot;Blue Shoes&quot;</span> to the cart</span>
 
-  <span class="lead-duration duration">3.492</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -308,11 +332,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I should see <span class="argument">1</span> <span class="argument">&quot;Blue Shoes&quot;</span> in the cart</span>
 
-  <span class="lead-duration duration">0.046</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -339,9 +363,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -351,17 +375,30 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.085</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>Error message</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException
+	at tech_state_cucumber.hooks.MyHooks.after(MyHooks.java:64)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -390,12 +427,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">5.589</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Add one quantity from Store</span>
 
@@ -406,13 +443,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-8">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -422,17 +459,41 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-6" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">Before</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.780</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>Error message</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.NoSuchDriverException: chromedriver at location /usr/bin/chromedriver, does not exist
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.1', java.version: '11.0.22'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:76)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:73)
+	at tech_state_cucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:49)
+	at tech_state_cucumber.hooks.MyHooks.before(MyHooks.java:45)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -445,9 +506,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -457,15 +518,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">I'm on the Store Page</span>
 
-  <span class="lead-duration duration">2.949</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -488,11 +549,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">I add a <span class="argument">&quot;Anchor Bracelet&quot;</span> to the cart</span>
 
-  <span class="lead-duration duration">2.596</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -515,11 +576,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I should see <span class="argument">1</span> <span class="argument">&quot;Anchor Bracelet&quot;</span> in the cart</span>
 
-  <span class="lead-duration duration">0.043</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -546,9 +607,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -558,17 +619,30 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.082</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>Error message</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException
+	at tech_state_cucumber.hooks.MyHooks.after(MyHooks.java:64)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -596,10 +670,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.794</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -612,13 +686,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-14">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -628,17 +702,41 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-10" class="inner-level collapse collapsable-details ">
+    <div id="before-14" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">Before</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.784</span>
+  <span class="lead-duration duration">0.001</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>Error message</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.NoSuchDriverException: chromedriver at location /usr/bin/chromedriver, does not exist
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.19.1', revision: 'abe0ee07dc'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.1', java.version: '11.0.22'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:76)
+	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:33)
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:89)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:84)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:73)
+	at tech_state_cucumber.factory.DriverFactory.initializeDriver(DriverFactory.java:49)
+	at tech_state_cucumber.hooks.MyHooks.before(MyHooks.java:45)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -651,7 +749,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-16">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -663,15 +761,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-16" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">I'm browsing <span class="argument">&quot;Blue Shoes&quot;</span></span>
 
-  <span class="lead-duration duration">1.607</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -694,11 +792,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">I add <span class="argument">0</span> quantity</span>
 
-  <span class="lead-duration duration">0.166</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -721,11 +819,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I should see an error</span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -733,21 +831,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-12" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: Failing this step intentionally to check the screenshot attached int the Report
-	at org.testng.Assert.fail(Assert.java:99)
-	at tech_state_cucumber.stepdefinitions.ProductStepDefinitions.iShouldSeeAnError(ProductStepDefinitions.java:53)
-	at &#10045;.I should see an error(file:///Users/amisiralieva/Desktop/latest_bdd_april_24/test_automation_BDD_framework/src/test/resources/features/add_to_cart.feature:57)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -767,9 +850,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-13">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-17">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -779,36 +862,34 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-13" class="inner-level collapse collapsable-details ">
+    <div id="after-17" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.657</span>
+  <span class="lead-duration duration">0.000</span>
 
           </div>
 
 
 
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-14" class="collapsable-control">
-      <a>Show an error when try to add zero quantity</a>
-      <a href="embeddings/embedding_746109663.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-14" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_746109663.png">
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
+          <a>Error message</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>java.lang.NullPointerException
+	at tech_state_cucumber.hooks.MyHooks.after(MyHooks.java:64)
+</pre>
       </div>
     </div>
   </div>
-  </div>
+
+
+
+
 
         </div>
     </div>
