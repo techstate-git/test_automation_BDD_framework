@@ -1,8 +1,8 @@
 
-@regression
+
 Feature: Place an order
 
-	@sanity @bvt
+
   Scenario: using default payment option
     Given I'm a guest customer
     And my billing details are

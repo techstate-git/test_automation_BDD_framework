@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>24 Apr 2024, 20:40</td>
+      <td>20 Jul 2024, 00:25</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@smoke</td>
-          <td      class="passed"    >12</td>
-          <td      class="failed"    >2</td>
+          <td      class="passed"    >11</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">14</td>
+          <td >0</td>
+          <td class="total">11</td>
 
-          <td  class="passed"    >2</td>
-          <td  class="failed"    >2</td>
-          <td class="total">4</td>
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
 
-          <td class="duration" data-value="16599003000">16.599</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="22714273000">22.714</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -181,12 +181,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.059</span>
+  <span class="lead-duration duration">1.277</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Boarding new customer</span>
 
@@ -197,7 +197,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -219,7 +219,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">6.953</span>
+  <span class="lead-duration duration">1.475</span>
 
           </div>
 
@@ -236,9 +236,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -248,7 +248,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -283,7 +283,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I use customer header</span>
 
-  <span class="lead-duration duration">0.312</span>
+  <span class="lead-duration duration">0.291</span>
 
 </div>
 
@@ -310,7 +310,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I create post request to create customer</span>
 
-  <span class="lead-duration duration">0.688</span>
+  <span class="lead-duration duration">0.931</span>
 
 </div>
 
@@ -337,7 +337,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I get status code <span class="argument">201</span> from database</span>
 
-  <span class="lead-duration duration">0.034</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -360,11 +360,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">response body should contain</span>
 
-  <span class="lead-duration duration">0.022</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -372,21 +372,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: Key 'firstName' is not present in the response body
-	at org.testng.Assert.fail(Assert.java:99)
-	at tech_state_cucumber.stepdefinitions.CustomerAPIStepDefinitions.response_body_should_contain(CustomerAPIStepDefinitions.java:85)
-	at &#10045;.response body should contain(file:///Users/amisiralieva/Desktop/latest_bdd_april_24/test_automation_BDD_framework/src/test/resources/features/CreateCustomerAPI.feature:9)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
           <table class="step-arguments">
@@ -423,7 +408,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -435,13 +420,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.224</span>
+  <span class="lead-duration duration">0.077</span>
 
           </div>
 
@@ -450,21 +435,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>Boarding new customer</a>
-      <a href="embeddings/embedding_1054072637.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_1054072637.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
@@ -483,16 +453,15 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_233058432.html">@regression</a>
        <a href="report-tag_4089311534.html">@smoke</a>
        <a href="report-tag_2209668642.html">@demo</a>
 </div>
 
 
-  <span class="lead-duration duration">8.155</span>
+  <span class="lead-duration duration">12.154</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -505,11 +474,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-5" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-6">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -521,13 +490,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-6" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.777</span>
+  <span class="lead-duration duration">0.608</span>
 
           </div>
 
@@ -544,7 +513,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -556,7 +525,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -564,7 +533,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I'm on the Store Page</span>
 
-  <span class="lead-duration duration">4.616</span>
+  <span class="lead-duration duration">4.639</span>
 
 </div>
 
@@ -591,7 +560,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I add a <span class="argument">&quot;Blue Shoes&quot;</span> to the cart</span>
 
-  <span class="lead-duration duration">3.492</span>
+  <span class="lead-duration duration">7.292</span>
 
 </div>
 
@@ -618,7 +587,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I should see <span class="argument">1</span> <span class="argument">&quot;Blue Shoes&quot;</span> in the cart</span>
 
-  <span class="lead-duration duration">0.046</span>
+  <span class="lead-duration duration">0.222</span>
 
 </div>
 
@@ -645,7 +614,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -657,13 +626,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.085</span>
+  <span class="lead-duration duration">0.079</span>
 
           </div>
 
@@ -690,16 +659,15 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_233058432.html">@regression</a>
        <a href="report-tag_4089311534.html">@smoke</a>
        <a href="report-tag_2209668642.html">@demo</a>
 </div>
 
 
-  <span class="lead-duration duration">5.589</span>
+  <span class="lead-duration duration">9.282</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -712,11 +680,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details ">
+  <div id="element-9" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-10">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -728,13 +696,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-12" class="inner-level collapse collapsable-details ">
+    <div id="before-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.before(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.780</span>
+  <span class="lead-duration duration">0.616</span>
 
           </div>
 
@@ -751,7 +719,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -763,7 +731,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -771,7 +739,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I'm on the Store Page</span>
 
-  <span class="lead-duration duration">2.949</span>
+  <span class="lead-duration duration">3.399</span>
 
 </div>
 
@@ -798,7 +766,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I add a <span class="argument">&quot;Anchor Bracelet&quot;</span> to the cart</span>
 
-  <span class="lead-duration duration">2.596</span>
+  <span class="lead-duration duration">5.641</span>
 
 </div>
 
@@ -825,7 +793,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I should see <span class="argument">1</span> <span class="argument">&quot;Anchor Bracelet&quot;</span> in the cart</span>
 
-  <span class="lead-duration duration">0.043</span>
+  <span class="lead-duration duration">0.241</span>
 
 </div>
 
@@ -852,7 +820,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -864,13 +832,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-14" class="inner-level collapse collapsable-details ">
+    <div id="after-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">tech_state_cucumber.hooks.MyHooks.after(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.082</span>
+  <span class="lead-duration duration">0.075</span>
 
           </div>
 
@@ -879,242 +847,6 @@ $(document).ready(function() {
 
 
 
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_1_3601652505.html">Add to cart</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_233058432.html">@regression</a>
-       <a href="report-tag_4089311534.html">@smoke</a>
-</div>
-
-
-  <span class="lead-duration duration">1.794</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-15">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Show an error when try to add zero quantity</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-15" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-16">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-16" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">tech_state_cucumber.hooks.MyHooks.before(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.784</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I'm browsing <span class="argument">&quot;Blue Shoes&quot;</span></span>
-
-  <span class="lead-duration duration">1.607</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I add <span class="argument">0</span> quantity</span>
-
-  <span class="lead-duration duration">0.166</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">I should see an error</span>
-
-  <span class="lead-duration duration">0.020</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-18" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: Failing this step intentionally to check the screenshot attached int the Report
-	at org.testng.Assert.fail(Assert.java:99)
-	at tech_state_cucumber.stepdefinitions.ProductStepDefinitions.iShouldSeeAnError(ProductStepDefinitions.java:53)
-	at &#10045;.I should see an error(file:///Users/amisiralieva/Desktop/latest_bdd_april_24/test_automation_BDD_framework/src/test/resources/features/add_to_cart.feature:57)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-19">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-19" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">tech_state_cucumber.hooks.MyHooks.after(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.657</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
-      <a>Show an error when try to add zero quantity</a>
-      <a href="embeddings/embedding_746109663.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-20" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_746109663.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
