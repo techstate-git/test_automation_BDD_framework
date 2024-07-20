@@ -12,7 +12,7 @@ import org.testng.annotations.DataProvider;
 		}, 
 		glue = {"tech_state_cucumber"},
 		// glue = {"awesomecucumber.stepdefinitions","awesomecucumber.hooks"},
-		features = "src/test/resources/features",
+		features = "/Users/amisiralieva/Desktop/automation_framework/test_automation_BDD_framework/src/test/resources/features",
 		tags = "@smoke")
 		//tags = "@regression")
 		//tags = "@demo")
