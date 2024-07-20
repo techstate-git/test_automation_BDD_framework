@@ -68,11 +68,11 @@
 
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-		<!-- <dependency>
+		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>${cucumber.version}</version>
-		</dependency>-->
+		</dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
