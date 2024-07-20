@@ -40,6 +40,11 @@
 					<threadCount>3</threadCount>-->
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>3.1.2</version>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -51,6 +56,15 @@
 			<artifactId>cucumber-java</artifactId>
 			<version>${cucumber.version}</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-failsafe-plugin</artifactId>
+			<version>3.3.1</version>
+			<scope>test</scope>
+		</dependency>
+
 
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
