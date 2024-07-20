@@ -8,7 +8,6 @@ tech_state_cucumber/domainobjects/CustomerPojo.class
 tech_state_cucumber/factory/DriverFactory.class
 tech_state_cucumber/enums/EndPoint.class
 tech_state_cucumber/pages/CartPage.class
-tech_state_cucumber/stepdefinitions/CustomerStepDefinitions.class
 tech_state_cucumber/apis/ResponseBody.class
 tech_state_cucumber/stepdefinitions/MyStepDefinitions.class
 tech_state_cucumber/stepdefinitions/StoreStepDefinitions.class
@@ -34,7 +33,6 @@ tech_state_cucumber/customtype/CustomDataTableType.class
 tech_state_cucumber/pages/ProductPage.class
 tech_state_cucumber/utils/EmailSendUtils.class
 tech_state_cucumber/runners/MyTestNGRunnerTest.class
-tech_state_cucumber/stepdefinitions/CustomerAPIStepDefinitions.class
 tech_state_cucumber/domainobjects/Product.class
 tech_state_cucumber/java_Mail_API/EmailAttachmentsSender$1.class
 tech_state_cucumber/enums/WaitStrategy.class
