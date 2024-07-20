@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: tech_state_cucumber.runners.MyJUnitRunnerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 27.557 s <<< FAILURE! - in tech_state_cucumber.runners.MyJUnitRunnerTest
+tech_state_cucumber.runners.MyJUnitRunnerTest  Time elapsed: 14.208 s  <<< ERROR!
+org.zeroturnaround.zip.ZipException: Given file './target/cucumber' doesn't exist!
+
