@@ -9,8 +9,7 @@
 
 package tech_state_cucumber.stepdefinitions;
 
-import org.junit.Assert;
-
+import org.testng.Assert;
 import tech_state_cucumber.context.TestContext;
 import tech_state_cucumber.enums.EndPoint;
 import tech_state_cucumber.factory.PageFactoryManager;

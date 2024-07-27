@@ -7,8 +7,7 @@
 
 package tech_state_cucumber.stepdefinitions;
 
-import org.junit.Assert;
-
+import org.testng.Assert;
 import tech_state_cucumber.context.TestContext;
 import tech_state_cucumber.domainobjects.Product;
 import tech_state_cucumber.factory.PageFactoryManager;
@@ -71,7 +70,7 @@ public class ProductStepDefinitions {
 
 	@Then("I should see the banner with text {string}")
 	public void iShouldSeeTheBannerWithTxt(String text) {
-		Assert.assertTrue("Expected: " + text + ", ACTUAL: " + productPage.getBannerTxt(),
-				productPage.getBannerTxt().contains(text));
+		Assert.assertTrue(productPage.getBannerTxt().contains(text),
+				"Expected: " + text + ", ACTUAL: " + productPage.getBannerTxt());
 	}
 }

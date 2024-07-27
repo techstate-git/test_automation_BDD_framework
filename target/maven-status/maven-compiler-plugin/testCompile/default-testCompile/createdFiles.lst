@@ -27,6 +27,7 @@ tech_state_cucumber/domainobjects/ProductList.class
 tech_state_cucumber/utils/CookieUtils.class
 tech_state_cucumber/apis/ApiRequest.class
 tech_state_cucumber/factory/PageFactoryManager.class
+tech_state_cucumber/runners/MyTestNGRunnerTest.class
 tech_state_cucumber/pages/StorePage.class
 tech_state_cucumber/domainobjects/Product.class
 tech_state_cucumber/java_Mail_API/EmailAttachmentsSender$1.class
@@ -36,5 +37,4 @@ tech_state_cucumber/apis/SpecBuilder.class
 tech_state_cucumber/enums/WaitStrategy.class
 tech_state_cucumber/stepdefinitions/CartStepDefinitions.class
 tech_state_cucumber/pages/BasePage.class
-tech_state_cucumber/runners/MyJUnitRunnerTest.class
 tech_state_cucumber/java_Mail_API/EmailAttachmentsSender.class

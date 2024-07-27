@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-26T20:20:32 CDT" name="Surefire suite" finished-at="2024-07-26T20:20:57 CDT" duration-ms="25091">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tech_state_cucumber.runners.MyTestNGRunnerTest@15ca7889]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-07-26T20:20:32 CDT" name="Surefire test" finished-at="2024-07-26T20:20:57 CDT" duration-ms="25091">
+      <class name="tech_state_cucumber.runners.MyTestNGRunnerTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tech_state_cucumber.runners.MyTestNGRunnerTest@15ca7889]" started-at="2024-07-26T20:20:32 CDT" name="setUpClass" finished-at="2024-07-26T20:20:33 CDT" duration-ms="264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@34d9df9f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tech_state_cucumber.runners.MyTestNGRunnerTest@15ca7889]" started-at="2024-07-26T20:20:33 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-26T20:20:44 CDT" duration-ms="11712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add one quantity from Store"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add to cart]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tech_state_cucumber.runners.MyTestNGRunnerTest@15ca7889]" started-at="2024-07-26T20:20:44 CDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-26T20:20:55 CDT" duration-ms="10496" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add one quantity from Store"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add to cart]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tech_state_cucumber.runners.MyTestNGRunnerTest@15ca7889]" started-at="2024-07-26T20:20:55 CDT" name="tearDownClass" finished-at="2024-07-26T20:20:57 CDT" duration-ms="2605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tech_state_cucumber.runners.MyTestNGRunnerTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
